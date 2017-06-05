@@ -76,7 +76,8 @@
             android:id="@+id/imageview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"/>
+            android:gravity="center"
+            android:scaleType="centerInside"/>
 
         <TextView
             android:id="@+id/textview1"
@@ -84,11 +85,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:gravity="center"
+            android:textAllCaps="true"
             android:textColor="#fff"
             android:textSize="40dp"/>
 
         <TextView
             android:id="@+id/textview2"
+            android:textAllCaps="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
