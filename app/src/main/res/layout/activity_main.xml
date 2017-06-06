@@ -18,13 +18,15 @@
             android:id="@+id/editText1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="TOP TEXT" />
+            android:hint="Top Text"
+            android:textColorHint="#3df234" />
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="BOTTOM TEXT" />
+            android:hint="Bottom Text"
+            android:textColorHint="#3df234"/>
 
         <Button
             android:id="@+id/go"
@@ -41,26 +43,61 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
-        <Button
-            android:id="@+id/load"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="LOAD"/>
+            android:gravity="center">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/load"
+                app:backgroundTint="#fff"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/save"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="save"/>
+            android:gravity="center">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/save"
+                app:backgroundTint="#fff"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/share"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="share"/>
+            android:gravity="center">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/share"
+                app:backgroundTint="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/settings"
+                app:backgroundTint="#fff"/>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -71,7 +108,7 @@
         android:layout_centerInParent="true"
         android:layout_above="@+id/blay"
         android:layout_below="@+id/tlay">
-
+s
         <ImageView
             android:id="@+id/imageview"
             android:layout_width="match_parent"

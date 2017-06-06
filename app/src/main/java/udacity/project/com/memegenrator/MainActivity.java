@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -30,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int MY_PERMISSION_REQUEST = 1;
     private static final int RESULT_LOAD_IMAGE = 2;
 
-    Button go, load, save, share;
+    Button go;
+    FloatingActionButton save, share, load, settings;
     EditText editText1, editText2;
     TextView textView1, textView2;
     ImageView imageView;
@@ -59,9 +61,10 @@ public class MainActivity extends AppCompatActivity {
         textView1 = (TextView) findViewById(R.id.textview1);
         textView2 = (TextView) findViewById(R.id.textview2);
         go = (Button) findViewById(R.id.go);
-        load = (Button) findViewById(R.id.load);
-        save = (Button) findViewById(R.id.save);
-        share = (Button) findViewById(R.id.share);
+        load = (FloatingActionButton) findViewById(R.id.load);
+        save = (FloatingActionButton) findViewById(R.id.save);
+        share = (FloatingActionButton) findViewById(R.id.share);
+        settings = (FloatingActionButton) findViewById(R.id.settings);
 
         save.setEnabled(false);
         share.setEnabled(false);
